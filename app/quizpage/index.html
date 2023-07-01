@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Radio Buttons</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    /* input[type="radio"] {
+        display: none;
+    }
+    
+    label {
+        position: relative;
+        color: #4189e0;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8em;
+        border: 3px solid #4189e0;
+        padding: 1em 2em;
+        border-radius: 0.5em;
+    }
+    
+    label:before {
+        content: "";
+        height: 2em;
+        width: 2em;
+        border: 3px solid #4189e0;
+        border-radius: 50%;
+    }
+    
+    input[type="radio"]:checked+label:before {
+        height: 1em;
+        width: 1em;
+        border: 0.65em solid #ffffff;
+        background-color: #4189e0;
+    }
+    
+    input[type="radio"]:checked+label {
+        background-color: #4189e0;
+        color: #ffffff;
+    } */
+    
+    input[type="radio"] {
+        display: none;
+    }
+    
+    label {
+        color: red;
+        border: 2px solid rgb(67, 199, 67);
+        padding: 1rem 2rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    label::before {
+        content: "";
+        height: 2em;
+        width: 2em;
+        border: 3px solid #4189e0;
+        border-radius: 50%;
+    }
+    
+    input[type="radio"]:checked+label:before {
+        height: 1em;
+        width: 1em;
+        border: 0.65em solid #ffffff;
+        background-color: #4189e0;
+    }
+    
+    input[type="radio"]:checked+label {
+        background-color: #4189e0;
+        color: #ffffff;
+    }
+    
+    .parent {
+        background: red;
+        height: 500px;
+        width: 500px;
+        position: relative;
+    }
+    
+    .child {
+        height: 50px;
+        width: 50px;
+        background: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+</style>
+
+<body>
+    <!-- <input type="radio" name="payment" id="card" checked="checked" />
+    <label for="card">Card</label>
+
+    <input type="radio" name="payment" id="cash" />
+    <label for="cash">Cash</label> -->
+
+
+    <div class="parent">
+        <div class="child">
+
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <div>
+        <input type="radio" name="me2" id="me" checked="checked" />
+        <label for="me">Card</label>
+
+        <input type="radio" name="me2" id="me2" />
+        <label for="me2">Cash</label>
+    </div>
+</body>
+
+</html>
