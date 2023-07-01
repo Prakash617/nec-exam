@@ -5,7 +5,7 @@ import styles from '../quizpage.module.css';
 
 
 
-const page = () => {
+const Quizpage = () => {
     const [quiz,SetQuiz] = useState([
         {
             question : 'what is your favorite beer?',
@@ -140,4 +140,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Quizpage
